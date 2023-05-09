@@ -4,10 +4,11 @@ metadata:
   name: mongo-service
 spec:
   selector:
-    component: mongo-deployment
+    component: mongodb
   ports:
     - protocol: "TCP"
       port: 27017
       targetPort: 27017
-  type: ClusterIP
+  type: NodePort
   
+
