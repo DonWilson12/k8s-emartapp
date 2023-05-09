@@ -3,5 +3,10 @@ kind: Kustomization
 
 resources:
   - db-depl.yaml
-  - db-service.yaml
+  - db-svc.yaml
   
+configMapGenerator:
+  - name: db-credentials
+    literals:
+      - username=admin
+      - password=admin
