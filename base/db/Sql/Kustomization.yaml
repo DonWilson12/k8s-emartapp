@@ -6,10 +6,11 @@ resources:
   - db-svc.yaml
   
 configMapGenerator:
-  - name: db-creds
-    literals:
-      - password=emartdbpass
   - name: database
     literals:
       - database=books
 
+secretGenerator:
+  - name: db-creds
+    literals:
+      - password=emartdbpass

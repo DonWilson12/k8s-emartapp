@@ -15,10 +15,13 @@ spec:
       containers:
         - name: mysql
           image: mysql:5.7
+          ports:
+            - name: mysql-port
+              containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   name: db-creds
                   key: password
             - name: MYSQL_DATABASE
@@ -26,4 +29,12 @@ spec:
                 configMapKeyRef:
                   name: database
                   key: database
-
+          volumeMounts:
+            - mountPath: /var/lib/mysql
+              name: dbvol
+      volumes:
+        - name: dbvol
+          hostPath:
+            path: /data
+            type: DirectoryOrCreate
+            
