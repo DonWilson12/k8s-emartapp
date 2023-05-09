@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: db
+      component: mysqldb
   template:
     metadata:
       labels:
-        component: db
+        component: mysqldb
     spec:
       containers:
         - name: mysql
