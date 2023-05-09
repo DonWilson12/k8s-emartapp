@@ -8,5 +8,8 @@ resources:
 configMapGenerator:
   - name: db-creds
     literals:
-      - password: emartdbpass
+      - password=emartdbpass
+  - name: database
+    literals:
+      - database=books
 

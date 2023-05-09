@@ -21,4 +21,8 @@ spec:
                 configMapKeyRef:
                   name: db-creds
                   key: password
-
+            - name: MYSQL_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: database
+                  key: database
