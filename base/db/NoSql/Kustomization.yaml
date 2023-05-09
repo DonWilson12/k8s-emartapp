@@ -6,7 +6,7 @@ resources:
   - db-svc.yaml
   
 configMapGenerator:
-  - name: db-credentials
+  - name: db-creds
     literals:
       - username=admin
       - password=admin
