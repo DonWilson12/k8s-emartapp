@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      component: mongodb
+      component: nosql-db
   template:
     metadata:
       labels:
-        component: mongodb
+        component: nosql-db
     spec:
       containers:
         - name: mongodb

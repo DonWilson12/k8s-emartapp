@@ -4,7 +4,7 @@ metadata:
   name: webapi-service
 spec:
   selector:
-    component: mysqldb
+    component: sql-db
   ports:
     - port: 3306
       targetPort: mysql-port

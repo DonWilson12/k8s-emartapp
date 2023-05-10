@@ -4,7 +4,7 @@ metadata:
   name: mongodb-service
 spec:
   selector:
-    component: mongodb
+    component: nosql-db
   ports:
     - port: 27017
       targetPort: mongodb-port
