@@ -3,4 +3,5 @@ kind: Kustomization
 
 resources:
   - webapi-depl.yaml
+  - webapi-svc.yaml
   

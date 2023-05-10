@@ -3,4 +3,5 @@ kind: Kustomization
 
 resources:
   - client-depl.yaml
+  - client-svc.yaml
   
