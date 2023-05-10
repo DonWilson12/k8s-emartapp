@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mongo-deployment
   labels:
-    component: mongodb
+    component: nosql-db
 spec:
   replicas: 1
   selector:
