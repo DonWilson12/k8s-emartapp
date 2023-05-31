@@ -6,3 +6,6 @@ bases:
   - client/
   - db/
   - webapi/
+
+resources:
+  - ingress.yaml
