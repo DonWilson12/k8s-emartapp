@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: example.mydevopsproj-obido.site
+  - host: kubevpro.mydevopsproj-obido.site
     http:
       paths:
         - path: /
