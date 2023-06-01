@@ -7,11 +7,10 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: www.mydevopsproj-obido.site
+  - host: example.mydevopsproj-obido.site
     http:
       paths:
-        - path: /
-          pathType: Prefix
+        - pathType: Prefix
           backend:
             service:
               name: client-service
